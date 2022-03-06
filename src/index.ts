@@ -82,6 +82,7 @@ async function run() {
       ...formatArgs,
       "-ignore-filename-regex=([\\/]rustc[\\/]|[\\/].cargo[\\/]registry[\\/])",
       "--branch-counts",
+      "--unconditional-branches",
       `-instr-profile=${profdataFile}`,
       ...objects,
     ];

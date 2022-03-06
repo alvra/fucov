@@ -81,6 +81,7 @@ async function run() {
     const llvmCovArgs = [
       ...formatArgs,
       "-ignore-filename-regex=([\\/]rustc[\\/]|[\\/].cargo[\\/]registry[\\/])",
+      "--branch-counts",
       `-instr-profile=${profdataFile}`,
       ...objects,
     ];
